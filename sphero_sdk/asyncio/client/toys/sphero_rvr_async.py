@@ -23,7 +23,7 @@ from sphero_sdk import SensorControlAsync
 from sphero_sdk import RvrFwCheckAsync
 
 
-class SpheroRvrAsync(RvrFwCheckAsync):
+class SpheroRvrAsync(): #(RvrFwCheckAsync): see comment below 
     def __init__(self, dal, log_level=LogLevel.Silent):
         logging.config.dictConfig(logging_config.get_dict(log_level))
         RvrFwCheckAsync.__init__(self)
@@ -32,9 +32,12 @@ class SpheroRvrAsync(RvrFwCheckAsync):
         self._drive_control = DriveControlAsync(self)
         self._infrared_control = InfraredControlAsync(self)
         self._sensor_control = SensorControlAsync(self)
-        asyncio.get_event_loop().run_until_complete(
-            self._check_rvr_fw()
-        )
+        # checking the firmware version is not particularly helpful here
+        # and using the asyncio event loop like this conflicts with other
+        # asyncio usage (e.g. Quart).
+        # asyncio.get_event_loop().run_until_complete(
+        #     self._check_rvr_fw()
+        # )
 
     @property
     def led_control(self):
