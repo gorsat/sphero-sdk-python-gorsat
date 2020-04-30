@@ -20,13 +20,13 @@ from sphero_sdk import LedControlAsync
 from sphero_sdk import DriveControlAsync
 from sphero_sdk import InfraredControlAsync
 from sphero_sdk import SensorControlAsync
-from sphero_sdk import RvrFwCheckAsync
+# from sphero_sdk import RvrFwCheckAsync
 
 
 class SpheroRvrAsync(): #(RvrFwCheckAsync): see comment below 
     def __init__(self, dal, log_level=LogLevel.Silent):
         logging.config.dictConfig(logging_config.get_dict(log_level))
-        RvrFwCheckAsync.__init__(self)
+        # RvrFwCheckAsync.__init__(self)
         self._dal = dal
         self._led_control = LedControlAsync(self)
         self._drive_control = DriveControlAsync(self)

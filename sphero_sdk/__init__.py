@@ -24,26 +24,26 @@ from sphero_sdk.common.enums.sensor_enums import GyroMaxFlagsBitmask
 from sphero_sdk.common.enums.sensor_enums import LocatorFlagsBitmask
 from sphero_sdk.common.enums.sensor_enums import InfraredSensorLocationsBitmask
 
-from sphero_sdk.asyncio.client.firmware.rvr_fw_check_async import RvrFwCheckAsync
+# from sphero_sdk.asyncio.client.firmware.rvr_fw_check_async import RvrFwCheckAsync
 from sphero_sdk.asyncio.controls.led_control_async import LedControlAsync
 from sphero_sdk.asyncio.controls.drive_control_async import DriveControlAsync
 from sphero_sdk.asyncio.controls.infrared_control_async import InfraredControlAsync
 from sphero_sdk.asyncio.controls.sensor_control_async import SensorControlAsync
 from sphero_sdk.asyncio.client.toys.sphero_rvr_async import SpheroRvrAsync
 from sphero_sdk.asyncio.client.dal.serial_async_dal import SerialAsyncDal
-from sphero_sdk.asyncio.client.dal.restful_async_dal import RestfulAsyncDal
+# from sphero_sdk.asyncio.client.dal.restful_async_dal import RestfulAsyncDal
 
-from sphero_sdk.observer.observer_base import Observer
-from sphero_sdk.observer.client.firmware.rvr_fw_check_observer import RvrFwCheckObserver
-from sphero_sdk.observer.events.event_dispatcher import EventDispatcher
-from sphero_sdk.observer.controls.led_control_observer import LedControlObserver
-from sphero_sdk.observer.controls.drive_control_observer import DriveControlObserver
-from sphero_sdk.observer.controls.infrared_control_observer import InfraredControlObserver
-from sphero_sdk.observer.controls.sensor_control_observer import SensorControlObserver
-from sphero_sdk.observer.client.dal.observer_parser import ObserverParser
-from sphero_sdk.observer.client.dal.serial_observer_port import SerialObserverPort
-from sphero_sdk.observer.client.dal.serial_observer_dal import SerialObserverDal
-from sphero_sdk.observer.client.toys.sphero_rvr_observer import SpheroRvrObserver
+# from sphero_sdk.observer.observer_base import Observer
+# from sphero_sdk.observer.client.firmware.rvr_fw_check_observer import RvrFwCheckObserver
+# from sphero_sdk.observer.events.event_dispatcher import EventDispatcher
+# from sphero_sdk.observer.controls.led_control_observer import LedControlObserver
+# from sphero_sdk.observer.controls.drive_control_observer import DriveControlObserver
+# from sphero_sdk.observer.controls.infrared_control_observer import InfraredControlObserver
+# from sphero_sdk.observer.controls.sensor_control_observer import SensorControlObserver
+# from sphero_sdk.observer.client.dal.observer_parser import ObserverParser
+# from sphero_sdk.observer.client.dal.serial_observer_port import SerialObserverPort
+# from sphero_sdk.observer.client.dal.serial_observer_dal import SerialObserverDal
+# from sphero_sdk.observer.client.toys.sphero_rvr_observer import SpheroRvrObserver
 
 from sphero_sdk.common.commands.api_and_shell import *
 from sphero_sdk.common.commands.connection import *
